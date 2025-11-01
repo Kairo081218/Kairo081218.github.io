@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 - HelpFit</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">HelpFit</a></div>
+    </header>
+    <main>
+        <div class="auth-section">
+            <div class="auth-form-container">
+                <h2>회원가입</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">비밀번호 확인</label>
+                        <input type="password" id="confirm-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>주요 운동 목표</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="goal" value="loss"> 체중 감량</label>
+                            <label><input type="radio" name="goal" value="gain"> 근력 강화</label>
+                            <label><input type="radio" name="goal" value="posture"> 자세 교정</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>관심 운동 분야 (중복 선택 가능)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interest" value="weight"> 웨이트 트레이닝</label>
+                            <label><input type="checkbox" name="interest" value="cardio"> 유산소</label>
+                            <label><input type="checkbox" name="interest" value="yoga"> 요가/필라테스</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-auth-submit">가입 완료</button>
+                    <p class="auth-switch">이미 계정이 있으신가요? <a href="login.html">로그인</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 HelpFit. All rights reserved.</p>
+    </footer>
+    <script src="function.js"></script>
+</body>
+</html>

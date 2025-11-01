@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>응원메시지 (힘내톡) - HelpFit</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="#" class="close-btn" id="close-sidebar-btn">&times;</a>
+      <div class="sidebar-header">
+        <img
+          src="https://images.pexels.com/photos/4753997/pexels-photo-4753997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="User Profile"
+        />
+        <h3>박서연님</h3>
+        <p>PREMIUM 회원</p>
+      </div>
+      <ul>
+        <li><a href="edit_profile.html">👤 개인정보 수정</a></li>
+        <li><a href="settings.html">⚙️ 설정</a></li>
+        <li><a href="customer_support.html">❓ 고객센터</a></li>
+        <li><a href="#" id="logout-btn">🔒 로그아웃</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <header>
+      <div class="logo"><a href="index.html">HelpFit</a></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="index.html">개인 맞춤 관리</a>
+            <div class="dropdown-content">
+              <a href="plan.html">개인화된 운동 계획</a>
+              <a href="routine.html">상황 변화에 따른 루틴 수정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">운동 실행/피드백</a>
+            <div class="dropdown-content">
+              <a href="medical_exercise.html">의료적 목적의 운동</a>
+              <a href="prevention.html">부상 방지 및 효과 극대화</a>
+              <a href="level_pt.html">레벨별 PT 영상</a>
+              <a href="feedback.html">동작 피드백 및 교정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">1:1 피트니스</a>
+            <div class="dropdown-content">
+              <a href="live_coaching.html">라이브 전문가 코칭</a>
+              <a href="custom_trainer.html">맞춤 트레이너</a>
+              <a href="correction_guide.html">교정 가이드</a>
+              <a href="chat.html">채팅 기능</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">성과 분석</a>
+            <div class="dropdown-content">
+              <a href="cheer_up.html">응원메시지 (힘내톡)</a>
+              <a href="emotion_diary.html">감정 일기</a>
+              <a href="data_management.html">데이터 정밀 관리</a>
+              <a href="membership.html">멤버십 서비스</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="catchphrase">Help Your Fitness!</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="cheer-up-container">
+        <div class="leaderboard">
+          <h2>이번 주 운동 랭킹</h2>
+          <div class="rank-card">
+            <div class="rank-badge gold">1</div>
+            <img
+              src="https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="User 1"
+            />
+            <div class="rank-info">
+              <h4 class="rank-name">김민준</h4>
+              <p>5일 연속 운동 달성!</p>
+            </div>
+          </div>
+          <div class="rank-card">
+            <div class="rank-badge silver">2</div>
+            <img
+              src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="User 2"
+            />
+            <div class="rank-info">
+              <h4 class="rank-name">이수진</h4>
+              <p>이번 주 5kg 감량 성공!</p>
+            </div>
+          </div>
+          <div class="rank-card">
+            <div class="rank-badge bronze">3</div>
+            <img
+              src="https://images.pexels.com/photos/4753997/pexels-photo-4753997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="User 3"
+            />
+            <div class="rank-info">
+              <h4 class="rank-name">박서연</h4>
+              <p>PT 최고 기록 달성!</p>
+            </div>
+          </div>
+        </div>
+        <div class="feed-container">
+          <h2>힘내톡 피드</h2>
+          <div class="new-post-box">
+            <textarea
+              id="new-post-content"
+              placeholder="서로를 응원하는 메시지를 남겨보세요."
+            ></textarea>
+            <button id="submit-post-btn">게시하기</button>
+          </div>
+          <div id="feed-list">
+            <div class="feed-card">
+              <div class="feed-header">
+                <img
+                  src="https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="김민준 profile picture"
+                />
+                <div class="user-info">
+                  <h4>김민준</h4>
+                  <span>15분 전</span>
+                </div>
+              </div>
+              <div class="feed-body">
+                <p>
+                  다들 오늘 주말에도 화이팅입니다! 오늘 재활 운동하고 왔어요.
+                </p>
+              </div>
+              <div class="feed-actions">
+                <button class="action-btn like-btn active">
+                  ❤️ 좋아요 <span class="count">12</span>
+                </button>
+                <button class="action-btn comment-btn">
+                  💬 댓글 <span class="count">2</span>
+                </button>
+              </div>
+              <div class="comment-section">
+                <div class="comment-list">
+                  <div class="comment">
+                    <p><strong>이수진:</strong> 민준님 정말 대단하세요! 👍</p>
+                  </div>
+                  <div class="comment">
+                    <p>
+                      <strong>박서연:</strong> 좋은 정보 감사합니다! 오늘 스쿼트
+                      100개 성공했어요!
+                    </p>
+                  </div>
+                </div>
+                <div class="comment-input-box">
+                  <input type="text" placeholder="댓글을 입력하세요..." />
+                  <button class="submit-comment-btn">게시</button>
+                </div>
+              </div>
+            </div>
+            <div class="feed-card">
+              <div class="feed-header">
+                <img
+                  src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="이수진 profile picture"
+                />
+                <div class="user-info">
+                  <h4>이수진</h4>
+                  <span>2시간 전</span>
+                </div>
+              </div>
+              <div class="feed-body">
+                <p>
+                  허리 재활 중인데 통증 없이 할 수 있는 운동들이 잘 정리되어
+                  있어요. 다들 화이팅입니다!!
+                </p>
+              </div>
+              <div class="feed-actions">
+                <button class="action-btn like-btn">
+                  ❤️ 좋아요 <span class="count">8</span>
+                </button>
+                <button class="action-btn comment-btn">
+                  💬 댓글 <span class="count">1</span>
+                </button>
+              </div>
+              <div class="comment-section" style="display: none">
+                <div class="comment-list">
+                  <div class="comment">
+                    <p>
+                      <strong>박서연:</strong> 저는 방울토마토를 간식으로
+                      먹어요!
+                    </p>
+                  </div>
+                </div>
+                <div class="comment-input-box">
+                  <input type="text" placeholder="댓글을 입력하세요..." />
+                  <button class="submit-comment-btn">게시</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 HelpFit. All rights reserved.</p>
+    </footer>
+    <script src="function.js"></script>
+  </body>
+</html>

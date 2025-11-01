@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpFit - 당신의 건강을 위한 AI 피트니스 파트너</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="#" class="close-btn" id="close-sidebar-btn">&times;</a>
+      <div class="sidebar-header">
+        <img
+          src="https://images.pexels.com/photos/4753997/pexels-photo-4753997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="User Profile"
+        />
+        <h3>박서연님</h3>
+        <p>PREMIUM 회원</p>
+      </div>
+      <ul>
+        <li><a href="edit_profile.html">👤 개인정보 수정</a></li>
+        <li><a href="settings.html">⚙️ 설정</a></li>
+        <li><a href="customer_support.html">❓ 고객센터</a></li>
+        <li><a href="#" id="logout-btn">🔒 로그아웃</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <header>
+      <div class="logo"><a href="index.html">HelpFit</a></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="#">개인 맞춤 관리</a>
+            <div class="dropdown-content">
+              <a href="plan.html">개인화된 운동 계획</a>
+              <a href="routine.html">상황 변화에 따른 루틴 수정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">운동 실행/피드백</a>
+            <div class="dropdown-content">
+              <a href="medical_exercise.html">의료적 목적의 운동</a>
+              <a href="prevention.html">부상 방지 및 효과 극대화</a>
+              <a href="level_pt.html">레벨별 PT 영상</a>
+              <a href="feedback.html">동작 피드백 및 교정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">1:1 피트니스</a>
+            <div class="dropdown-content">
+              <a href="live_coaching.html">라이브 전문가 코칭</a>
+              <a href="custom_trainer.html">맞춤 트레이너</a>
+              <a href="correction_guide.html">교정 가이드</a>
+              <a href="chat.html">채팅 기능</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">성과 분석</a>
+            <div class="dropdown-content">
+              <a href="cheer_up.html">응원메시지 (힘내톡)</a>
+              <a href="emotion_diary.html">감정 일기</a>
+              <a href="data_management.html">데이터 정밀 관리</a>
+              <a href="membership.html">멤버십 서비스</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="catchphrase">Help Your Fitness!</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>AI 피트니스 파트너, HelpFit</h1>
+        <p>당신의 모든 순간을 분석하여 최적의 건강 솔루션을 제공합니다.</p>
+        <button class="cta-button" onclick="location.href='plan.html'">
+          나의 맞춤 플랜 시작하기
+        </button>
+      </section>
+
+      <section class="info-grid-section">
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>HelpFit 시작하기</h3>
+            <ol class="steps">
+              <li><span>1</span> 목표 설정 및 정보 입력</li>
+              <li><span>2</span> AI의 맞춤형 계획 확인</li>
+              <li><span>3</span> 매일 재활 운동 실천</li>
+              <li><span>4</span> 데이터로 성장 확인</li>
+            </ol>
+          </div>
+          <div class="info-card">
+            <h3>빠른 메뉴</h3>
+            <ul class="quick-links">
+              <li><a href="plan.html">오늘의 운동 계획 보기</a></li>
+              <li><a href="live_coaching.html">라이브 코칭 예약</a></li>
+              <li><a href="data_management.html">내 데이터 대시보드</a></li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>로그인</h3>
+            <p>로그인하고 맞춤형 서비스를 이용해보세요.</p>
+            <div class="auth-buttons">
+              <a href="login.html" class="btn-auth login">로그인</a>
+              <a href="signup.html" class="btn-auth signup">회원가입</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="carousel-container">
+        <div class="carousel-viewport">
+          <div class="carousel-slider">
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="맞춤형 운동 계획"
+              />
+              <div class="carousel-caption">
+                <h3>AI가 설계하는 나만의 운동 계획</h3>
+                <p>
+                  목표와 컨디션에 따라 매일 달라지는 맞춤형 플랜을 경험하세요.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/3076516/pexels-photo-3076516.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="실시간 동작 피드백"
+              />
+              <div class="carousel-caption">
+                <h3>실시간 AI 동작 분석</h3>
+                <p>
+                  AI 코치가 당신의 자세를 분석하여 부상 위험을 줄이고 운동
+                  효과를 높여줍니다.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/4164755/pexels-photo-4164755.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="1:1 라이브 코칭"
+              />
+              <div class="carousel-caption">
+                <h3>전문가와의 1:1 라이브 코칭</h3>
+                <p>
+                  언제 어디서든 전문 트레이너와 함께 운동하고 궁금증을
+                  해결하세요.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev-btn">&lt;</button>
+        <button class="carousel-btn next-btn">&gt;</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 HelpFit. All rights reserved.</p>
+    </footer>
+    <script src="function.js"></script>
+  </body>
+</html>

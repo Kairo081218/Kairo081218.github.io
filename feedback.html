@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동작 피드백 및 교정 - HelpFit</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="#" class="close-btn" id="close-sidebar-btn">&times;</a>
+      <div class="sidebar-header">
+        <img
+          src="https://images.pexels.com/photos/4753997/pexels-photo-4753997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="User Profile"
+        />
+        <h3>박서연님</h3>
+        <p>PREMIUM 회원</p>
+      </div>
+      <ul>
+        <li><a href="edit_profile.html">👤 개인정보 수정</a></li>
+        <li><a href="settings.html">⚙️ 설정</a></li>
+        <li><a href="customer_support.html">❓ 고객센터</a></li>
+        <li><a href="#" id="logout-btn">🔒 로그아웃</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <header>
+      <div class="logo"><a href="index.html">HelpFit</a></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="index.html">개인 맞춤 관리</a>
+            <div class="dropdown-content">
+              <a href="plan.html">개인화된 운동 계획</a>
+              <a href="routine.html">상황 변화에 따른 루틴 수정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">운동 실행/피드백</a>
+            <div class="dropdown-content">
+              <a href="medical_exercise.html">의료적 목적의 운동</a>
+              <a href="prevention.html">부상 방지 및 효과 극대화</a>
+              <a href="level_pt.html">레벨별 PT 영상</a>
+              <a href="feedback.html">동작 피드백 및 교정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">1:1 피트니스</a>
+            <div class="dropdown-content">
+              <a href="live_coaching.html">라이브 전문가 코칭</a>
+              <a href="custom_trainer.html">맞춤 트레이너</a>
+              <a href="correction_guide.html">교정 가이드</a>
+              <a href="chat.html">채팅 기능</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">성과 분석</a>
+            <div class="dropdown-content">
+              <a href="cheer_up.html">응원메시지 (힘내톡)</a>
+              <a href="emotion_diary.html">감정 일기</a>
+              <a href="data_management.html">데이터 정밀 관리</a>
+              <a href="membership.html">멤버십 서비스</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="catchphrase">Help Your Fitness!</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-section">
+        <h2>AI 동작 분석</h2>
+        <p>운동 영상을 업로드하면 AI가 실시간으로 자세를 분석해 드립니다.</p>
+        <div class="upload-box">
+          <div class="icon">📤</div>
+          <p>이곳을 클릭하여 동영상 업로드 (MP4)</p>
+        </div>
+      </div>
+      <div class="content-section">
+        <h2>최근 분석 결과: 스쿼트</h2>
+        <div class="info-layout">
+          <div class="info-image">
+            <img
+              src="https://images.pexels.com/photos/3076516/pexels-photo-3076516.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="스쿼트 자세"
+            />
+          </div>
+          <div class="info-content">
+            <h3>종합 점수: 85점</h3>
+            <p>
+              전반적인 자세는 안정적이지만 무릎이 안쪽으로 모이는 경향이
+              있습니다. 교정 가이드를 참고하여 연습해보세요.
+            </p>
+            <ul>
+              <li>✔️ 깊이: 적절 (Full Depth)</li>
+              <li>✔️ 허리 각도: 안정적 (Neutral Spine)</li>
+              <li>❌ 무릎 위치: 내측 쏠림 (Knee Valgus)</li>
+              <li>✔️ 발 간격: 적절 (Shoulder-width)</li>
+            </ul>
+            <a
+              href="correction_guide.html"
+              class="btn-auth-submit"
+              style="width: auto; text-decoration: none"
+              >자세 교정 가이드 보기</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 HelpFit. All rights reserved.</p>
+    </footer>
+    <script src="function.js"></script>
+  </body>
+</html>

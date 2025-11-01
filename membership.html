@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>멤버십 서비스 - HelpFit</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="#" class="close-btn" id="close-sidebar-btn">&times;</a>
+      <div class="sidebar-header">
+        <img
+          src="https://images.pexels.com/photos/4753997/pexels-photo-4753997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="User Profile"
+        />
+        <h3>박서연님</h3>
+        <p>PREMIUM 회원</p>
+      </div>
+      <ul>
+        <li><a href="edit_profile.html">👤 개인정보 수정</a></li>
+        <li><a href="settings.html">⚙️ 설정</a></li>
+        <li><a href="customer_support.html">❓ 고객센터</a></li>
+        <li><a href="#" id="logout-btn">🔒 로그아웃</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <header>
+      <div class="logo"><a href="index.html">HelpFit</a></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="index.html">개인 맞춤 관리</a>
+            <div class="dropdown-content">
+              <a href="plan.html">개인화된 운동 계획</a>
+              <a href="routine.html">상황 변화에 따른 루틴 수정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">운동 실행/피드백</a>
+            <div class="dropdown-content">
+              <a href="medical_exercise.html">의료적 목적의 운동</a>
+              <a href="prevention.html">부상 방지 및 효과 극대화</a>
+              <a href="level_pt.html">레벨별 PT 영상</a>
+              <a href="feedback.html">동작 피드백 및 교정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">1:1 피트니스</a>
+            <div class="dropdown-content">
+              <a href="live_coaching.html">라이브 전문가 코칭</a>
+              <a href="custom_trainer.html">맞춤 트레이너</a>
+              <a href="correction_guide.html">교정 가이드</a>
+              <a href="chat.html">채팅 기능</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">성과 분석</a>
+            <div class="dropdown-content">
+              <a href="cheer_up.html">응원메시지 (힘내톡)</a>
+              <a href="emotion_diary.html">감정 일기</a>
+              <a href="data_management.html">데이터 정밀 관리</a>
+              <a href="membership.html">멤버십 서비스</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="catchphrase">Help Your Fitness!</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="pricing-container">
+        <h1>HelpFit 멤버십</h1>
+        <p>당신에게 꼭 맞는 플랜을 선택하고 건강한 변화를 시작하세요.</p>
+        <div class="pricing-grid">
+          <div class="plan-card">
+            <h3 class="plan-title">BASIC</h3>
+            <p class="plan-price">무료</p>
+            <ul class="plan-features">
+              <li>✔️ 기본 운동 프로그램 제공</li>
+              <li>✔️ 음식 기록 및 칼로리 계산</li>
+              <li>✔️ 커뮤니티 (힘내톡) 이용</li>
+              <li class="disabled">❌ AI 맞춤형 계획</li>
+              <li class="disabled">❌ 1:1 라이브 코칭</li>
+              <li class="disabled">❌ 심층 데이터 분석</li>
+            </ul>
+            <button class="btn-select-plan" disabled>현재 플랜</button>
+          </div>
+          <div class="plan-card recommended">
+            <div class="recommended-badge">추천</div>
+            <h3 class="plan-title">PREMIUM</h3>
+            <p class="plan-price">월 ₩9,900 <span class="per-month"></span></p>
+            <ul class="plan-features">
+              <li>✔️ AI 맞춤형 운동/식단 계획</li>
+              <li>✔️ 1:1 라이브 전문가 코칭</li>
+              <li>✔️ 실시간 AI 동작 분석 및 피드백</li>
+              <li>✔️ 의료 목적 재활 프로그램</li>
+              <li>✔️ 모든 기능 무제한 이용</li>
+              <li>✔️ 심층 데이터 분석 및 리포트</li>
+            </ul>
+            <button class="btn-select-plan">프리미엄 시작하기</button>
+          </div>
+        </div>
+      </div>
+      <!-- Payment Modal -->
+      <div id="payment-modal" class="modal-overlay" style="display: none">
+        <div class="modal-content payment-modal-content">
+          <h2><span id="selected-plan-name"></span> 플랜 결제</h2>
+          <p>결제 정보를 입력해주세요.</p>
+          <form id="payment-form">
+            <div class="form-group">
+              <label for="card-name">카드 소유주 이름</label>
+              <input type="text" id="card-name" placeholder="홍길동" required />
+            </div>
+            <div class="form-group">
+              <label for="card-number">카드 번호</label>
+              <input
+                type="text"
+                id="card-number"
+                placeholder="1234-5678-9012-3456"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="expiry-date">유효기간</label>
+                <input
+                  type="text"
+                  id="expiry-date"
+                  placeholder="MM/YY"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" placeholder="123" required />
+              </div>
+            </div>
+            <button
+              type="submit"
+              id="submit-payment-btn"
+              class="btn-auth-submit"
+            >
+              결제 완료
+            </button>
+            <button type="button" id="cancel-payment-btn" class="btn-cancel">
+              취소
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 HelpFit. All rights reserved.</p>
+    </footer>
+    <script src="function.js"></script>
+  </body>
+</html>

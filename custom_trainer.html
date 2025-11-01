@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맞춤 트레이너 - HelpFit</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="#" class="close-btn" id="close-sidebar-btn">&times;</a>
+      <div class="sidebar-header">
+        <img
+          src="https://images.pexels.com/photos/4753997/pexels-photo-4753997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="User Profile"
+        />
+        <h3>박서연님</h3>
+        <p>PREMIUM 회원</p>
+      </div>
+      <ul>
+        <li><a href="edit_profile.html">👤 개인정보 수정</a></li>
+        <li><a href="settings.html">⚙️ 설정</a></li>
+        <li><a href="customer_support.html">❓ 고객센터</a></li>
+        <li><a href="#" id="logout-btn">🔒 로그아웃</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <header>
+      <div class="logo"><a href="index.html">HelpFit</a></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="index.html">개인 맞춤 관리</a>
+            <div class="dropdown-content">
+              <a href="plan.html">개인화된 운동 계획</a>
+              <a href="routine.html">상황 변화에 따른 루틴 수정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">운동 실행/피드백</a>
+            <div class="dropdown-content">
+              <a href="medical_exercise.html">의료적 목적의 운동</a>
+              <a href="prevention.html">부상 방지 및 효과 극대화</a>
+              <a href="level_pt.html">레벨별 PT 영상</a>
+              <a href="feedback.html">동작 피드백 및 교정</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">1:1 피트니스</a>
+            <div class="dropdown-content">
+              <a href="live_coaching.html">라이브 전문가 코칭</a>
+              <a href="custom_trainer.html">맞춤 트레이너</a>
+              <a href="correction_guide.html">교정 가이드</a>
+              <a href="chat.html">채팅 기능</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">성과 분석</a>
+            <div class="dropdown-content">
+              <a href="cheer_up.html">응원메시지 (힘내톡)</a>
+              <a href="emotion_diary.html">감정 일기</a>
+              <a href="data_management.html">데이터 정밀 관리</a>
+              <a href="membership.html">멤버십 서비스</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="catchphrase">Help Your Fitness!</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-section">
+        <h2>나에게 맞는 트레이너 찾기</h2>
+        <div class="routine-options">
+          <div class="option active">전체</div>
+          <div class="option">체중 감량</div>
+          <div class="option">근력 강화</div>
+          <div class="option">자세 교정</div>
+          <div class="option">재활 운동</div>
+        </div>
+        <div class="trainer-grid">
+          <div class="trainer-card">
+            <img
+              src="https://images.pexels.com/photos/4164755/pexels-photo-4164755.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="김민준 트레이너"
+            />
+            <h3>김민준 트레이너</h3>
+            <p class="specialty">#근력 강화 #자세 교정</p>
+            <a href="#" class="btn-profile">프로필 보기</a>
+            <a href="#" class="btn-rate">평가하기</a>
+          </div>
+          <div class="trainer-card">
+            <img
+              src="https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="이수진 트레이너"
+            />
+            <h3>이수진 트레이너</h3>
+            <p class="specialty">#체중 감량 #재활 운동</p>
+            <a href="#" class="btn-profile">프로필 보기</a>
+            <a href="#" class="btn-rate">평가하기</a>
+          </div>
+          <div class="trainer-card">
+            <img
+              src="https://images.pexels.com/photos/4753997/pexels-photo-4753997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="박서연 트레이너"
+            />
+            <h3>박서연 트레이너</h3>
+            <p class="specialty">#자세 교정 #체중 감량</p>
+            <a href="#" class="btn-profile">프로필 보기</a>
+            <a href="#" class="btn-rate">평가하기</a>
+          </div>
+          <div class="trainer-card">
+            <img
+              src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="최우진 트레이너"
+            />
+            <h3>최우진 트레이너</h3>
+            <p class="specialty">#근력 강화 #체중 감량</p>
+            <a href="#" class="btn-profile">프로필 보기</a>
+            <a href="#" class="btn-rate">평가하기</a>
+          </div>
+          <div class="trainer-card">
+            <img
+              src="https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="정다은 트레이너"
+            />
+            <h3>정다은 트레이너</h3>
+            <p class="specialty">#재활 운동 #자세 교정</p>
+            <a href="#" class="btn-profile">프로필 보기</a>
+            <a href="#" class="btn-rate">평가하기</a>
+          </div>
+          <div class="trainer-card">
+            <img
+              src="https://images.pexels.com/photos/866027/pexels-photo-866027.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="송지우 트레이너"
+            />
+            <h3>송지우 트레이너</h3>
+            <p class="specialty">#근력 강화 #재활 운동</p>
+            <a href="#" class="btn-profile">프로필 보기</a>
+            <a href="#" class="btn-rate">평가하기</a>
+          </div>
+        </div>
+      </div>
+      <!-- Rating Modal -->
+      <div id="rating-modal" class="modal-overlay" style="display: none">
+        <div class="modal-content">
+          <h2 id="rating-trainer-name">트레이너 평가하기</h2>
+          <p>트레이너의 전문성과 코칭에 얼마나 만족하셨나요?</p>
+          <div class="rating-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
+            ><span>⭐</span>
+          </div>
+          <button id="submit-rating" class="btn-auth-submit">평가 제출</button>
+          <button id="cancel-rating" class="btn-cancel">취소</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 HelpFit. All rights reserved.</p>
+    </footer>
+    <script src="function.js"></script>
+  </body>
+</html>
